@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner border ring -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#334155" stroke-width="4" stroke-opacity="0.5" />
+
+  <!-- Main Logo Mark: Ledger Book with Balance Scale & Financial Chart -->
+  <g filter="url(#shadow)">
+    <!-- Base Ledger Card -->
+    <rect x="96" y="96" width="320" height="320" rx="40" fill="#1e293b" stroke="#475569" stroke-width="6" />
+
+    <!-- Left Spine Accent -->
+    <path d="M 96 136 C 96 114 114 96 136 96 L 150 96 L 150 416 L 136 416 C 114 416 96 398 96 376 Z" fill="url(#accentGrad)" />
+
+    <!-- Ledger Spine Stitch Lines -->
+    <line x1="123" y1="160" x2="123" y2="190" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-opacity="0.7" />
+    <line x1="123" y1="240" x2="123" y2="270" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-opacity="0.7" />
+    <line x1="123" y1="320" x2="123" y2="350" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-opacity="0.7" />
+
+    <!-- Accounting Balance Scale & Graphic Symbol -->
+    <!-- Scale Top Bar -->
+    <path d="M 195 185 L 365 185" stroke="#f8fafc" stroke-width="10" stroke-linecap="round" />
+    <!-- Center Pivot -->
+    <circle cx="280" cy="185" r="14" fill="url(#goldGrad)" />
+    <path d="M 280 185 L 280 295" stroke="#94a3b8" stroke-width="8" stroke-linecap="round" />
+    <path d="M 240 295 L 320 295" stroke="#f8fafc" stroke-width="10" stroke-linecap="round" />
+
+    <!-- Left Pan (Debet) -->
+    <path d="M 215 185 L 185 240" stroke="#94a3b8" stroke-width="6" stroke-linecap="round" />
+    <path d="M 215 185 L 245 240" stroke="#94a3b8" stroke-width="6" stroke-linecap="round" />
+    <path d="M 175 240 C 175 260 255 260 255 240 Z" fill="url(#accentGrad)" />
+
+    <!-- Right Pan (Kredit) -->
+    <path d="M 345 185 L 315 240" stroke="#94a3b8" stroke-width="6" stroke-linecap="round" />
+    <path d="M 345 185 L 375 240" stroke="#94a3b8" stroke-width="6" stroke-linecap="round" />
+    <path d="M 305 240 C 305 260 385 260 385 240 Z" fill="url(#goldGrad)" />
+
+    <!-- Modern "SA" Monogram Badge at Bottom -->
+    <rect x="210" y="328" width="140" height="48" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="3" />
+    <text x="280" y="361" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">SIKLUS</text>
+  </g>
+</svg>

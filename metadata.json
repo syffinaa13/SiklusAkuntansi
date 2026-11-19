@@ -1,0 +1,6 @@
+{
+  "name": "SiklusAkun - Aplikasi Siklus Akuntansi Lengkap",
+  "description": "Aplikasi siklus akuntansi komprehensif berbahasa Indonesia: Jurnal Umum, Buku Besar, Neraca Saldo, Jurnal Penyesuaian, Neraca Lajur 10 Kolom, dan Laporan Keuangan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
